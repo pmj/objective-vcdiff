@@ -8,5 +8,7 @@ The [Pimpl idiom][pimplobjc] is used to keep any C++ out of the headers, so this
 
 To use this code in an XCode project, download the [Open-VCDiff][] source, extract it, add the 'src' directory, including the 'google' subdirectory but excluding 'solaris' to a new target in your project (or a sub-project), then add the files from the src directory of this repository. Your own code will only need to #import "VCDiffDecoder.h", none of the google stuff. About half of the open-vcdiff code is only used for encoding, so you can either remove those files manually or let the deadstripper deal with them automatically during the linking stage.
 
+Open-VCDiff is subject to the Apache License 2.0, this wrapper is licensed under the more permissive 3-clause BSD license. (no attribution required)
+
 [open-vcdiff]: http://code.google.com/p/open-vcdiff/
 [pimplobjc]: http://philjordan.eu/article/strategies-for-using-c++-in-objective-c-projects
