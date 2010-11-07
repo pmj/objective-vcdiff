@@ -7,4 +7,4 @@ This thin wrapper provides a pure Objective-C (not Objective-C++) interface for 
 The [Pimpl idiom][pimplobjc] is used to keep any C++ out of the headers, so this is suitable to use with pure Objective-C apps. You will need to add libstdc++.dylib to your app's dependencies, however.
 
 [open-vcdiff]: http://code.google.com/p/open-vcdiff/
-[pimplobj]: http://philjordan.eu/article/strategies-for-using-c++-in-objective-c-projects
+[pimplobjc]: http://philjordan.eu/article/strategies-for-using-c++-in-objective-c-projects
