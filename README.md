@@ -24,7 +24,10 @@ subdirectory but excluding 'solaris' to a new target in your project (or a
 sub-project), then add the source and header files from the src directory of this
 repository. You'll want to omit all files ending in -test.cc, as well as
 vcdiff_main.cc, which are needed only for the unit tests and the command line tool,
-respectively.
+respectively. You will also want to add the path to the open-vcdiff 'src' directory
+to the list of 'Search Headers' paths in your build target's settings. I've
+added an example XCode project for building as a static library on iOS to the
+objective-vcdiff-ios directory.
 
 Your
 own code will only need to #import "VCDiffDecoder.h", none of the google stuff.
